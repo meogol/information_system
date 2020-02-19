@@ -1,4 +1,4 @@
-package com.example.information_system.view
+package com.example.information_system.view.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
