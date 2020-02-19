@@ -20,6 +20,6 @@ class PagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(frag
     }
 
     override fun getCount(): Int {
-        return Int.MAX_VALUE
+        return 3
     }
 }
