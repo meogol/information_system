@@ -18,6 +18,8 @@
 
 
     <TextView
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
         android:id="@+id/reach_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,6 +32,8 @@
         app:layout_constraintTop_toBottomOf="@+id/reach_iv" />
 
     <TextView
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15sp"
         android:gravity="center"
         android:id="@+id/reach_desc_tv"
         android:layout_width="wrap_content"
