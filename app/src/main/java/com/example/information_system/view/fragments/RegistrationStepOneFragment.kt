@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.information_system.R
-import com.example.information_system.view.Activity.RegistrationActivity
+import com.example.information_system.view.activity.RegistrationActivity
 
 class RegistrationStepOneFragment: Fragment() {
     private lateinit var bStepTwo: Button

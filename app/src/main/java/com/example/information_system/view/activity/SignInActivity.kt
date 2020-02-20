@@ -1,4 +1,4 @@
-package com.example.information_system.view.Activity
+package com.example.information_system.view.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.viewpager.widget.ViewPager
 import com.example.information_system.R
 import com.example.information_system.presenter.SignInPresenter
-import com.example.information_system.view.coordinator.Interface.ISignInActivity
+import com.example.information_system.view.coordinator.interfaceCoordinators.ISignInActivity
 import com.google.android.material.tabs.TabLayout
 
 class SignInActivity : AppCompatActivity(),
