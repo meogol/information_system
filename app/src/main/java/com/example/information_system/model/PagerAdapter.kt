@@ -5,9 +5,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.information_system.fragments.CommunicateFragment
-import com.example.information_system.fragments.LearnFragment
-import com.example.information_system.fragments.ReachFragment
+import com.example.information_system.view.fragments.CommunicateFragment
+import com.example.information_system.view.fragments.LearnFragment
+import com.example.information_system.view.fragments.ReachFragment
 
 @Suppress("DEPRECATION")
 class PagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {

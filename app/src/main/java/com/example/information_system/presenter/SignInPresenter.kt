@@ -1,7 +1,7 @@
 package com.example.information_system.presenter
 
 import com.example.information_system.model.PagerAdapter
-import com.example.information_system.view.SignInActivity
+import com.example.information_system.view.activity.SignInActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
