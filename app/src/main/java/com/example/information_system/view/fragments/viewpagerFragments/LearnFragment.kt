@@ -1,4 +1,4 @@
-package com.example.information_system.view.fragments
+package com.example.information_system.view.fragments.viewpagerFragments
 
 import android.graphics.Typeface
 import android.os.Bundle

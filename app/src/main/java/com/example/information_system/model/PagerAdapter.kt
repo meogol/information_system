@@ -1,17 +1,11 @@
 package com.example.information_system.model
 
-import android.util.Log
-import android.widget.Toast
-import androidx.annotation.IntegerRes
-import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.example.information_system.view.activity.SignInActivity
-import com.example.information_system.view.fragments.CommunicateFragment
-import com.example.information_system.view.fragments.LearnFragment
-import com.example.information_system.view.fragments.ReachFragment
+import com.example.information_system.view.fragments.viewpagerFragments.CommunicateFragment
+import com.example.information_system.view.fragments.viewpagerFragments.LearnFragment
+import com.example.information_system.view.fragments.viewpagerFragments.ReachFragment
 
 @Suppress("DEPRECATION")
 class PagerAdapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(fragmentManager) {

@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.example.information_system.R
-import com.example.information_system.view.fragments.RegistrationStepOneFragment
-import com.example.information_system.view.fragments.RegistrationStepTwoFragment
+import com.example.information_system.view.fragments.registration.RegistrationStepOneFragment
 
 class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

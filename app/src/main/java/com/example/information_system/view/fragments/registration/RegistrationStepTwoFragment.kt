@@ -1,4 +1,4 @@
-package com.example.information_system.view.fragments
+package com.example.information_system.view.fragments.registration
 
 import android.os.Bundle
 import android.view.LayoutInflater
