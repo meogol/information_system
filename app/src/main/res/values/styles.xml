@@ -8,4 +8,18 @@
         <item name="android:statusBarColor">#FFA000</item>
     </style>
 
-</resources>
+    <style name="Widget.AppTheme.TextInputLayoutList" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#FFA000</item>
+        <item name="boxCornerRadiusBottomEnd">3dp</item>
+        <item name="boxCornerRadiusBottomStart">3dp</item>
+        <item name="boxCornerRadiusTopEnd">3dp</item>
+        <item name="boxCornerRadiusTopStart">3dp</item>
+    </style>
+    <style name="mytext" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFA000</item>
+        <item name="android:textColorHint">#FFA000</item>
+        <item name="colorAccent">#FFA000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    </resources>

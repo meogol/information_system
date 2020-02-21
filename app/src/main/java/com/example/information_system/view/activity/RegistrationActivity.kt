@@ -17,7 +17,7 @@ class RegistrationActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true);
         supportActionBar!!.setHomeButtonEnabled(true);
         supportActionBar!!.setDisplayShowTitleEnabled(false);
-        toolbar.title = "Шаг  из 2";
+        toolbar.title = "Создание профиля";
 
 
         initFragment(RegistrationStepOneFragment())

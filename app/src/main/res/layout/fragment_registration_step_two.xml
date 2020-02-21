@@ -28,6 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:background="@drawable/et"
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,6 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/rb_man" />
 
     <EditText
+        android:background="@drawable/et"
         android:id="@+id/et_surname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,6 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
     <EditText
+        android:background="@drawable/et"
         android:id="@+id/et_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,6 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_phone" />
 
     <EditText
+        android:background="@drawable/et"
         android:id="@+id/et_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,6 +81,8 @@
         app:layout_constraintTop_toBottomOf="@+id/et_surname" />
 
     <Button
+        android:background="@drawable/orange_button"
+        android:textColor="@android:color/white"
         android:id="@+id/b_next_step_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
