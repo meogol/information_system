@@ -19,7 +19,7 @@ class RegistrationActivity : AppCompatActivity() {
         supportActionBar!!.setHomeButtonEnabled(true);
         supportActionBar!!.setDisplayShowTitleEnabled(false);
         toolbar.title = "Создание профиля";
-        
+
 
         initFragment(RegistrationStepOneFragment())
     }
