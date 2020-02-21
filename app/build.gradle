@@ -26,6 +26,8 @@ android {
 
 dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
+    implementation 'com.h6ah4i.android.materialshadowninepatch:materialshadowninepatch:1.0.0'
+    implementation 'com.asksira.android:loopingviewpager:1.2.0'
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"

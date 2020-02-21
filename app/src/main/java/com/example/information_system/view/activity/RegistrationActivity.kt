@@ -1,11 +1,11 @@
 package com.example.information_system.view.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.example.information_system.R
-import com.example.information_system.view.fragments.RegistrationStepOneFragment
+import com.example.information_system.view.fragments.registration.RegistrationStepOneFragment
 
 class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,7 @@ class RegistrationActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true);
         supportActionBar!!.setHomeButtonEnabled(true);
         supportActionBar!!.setDisplayShowTitleEnabled(false);
-        toolbar.title = "Шаг  из 2";
+        toolbar.title = "Создание профиля";
 
 
         initFragment(RegistrationStepOneFragment())
@@ -27,7 +27,7 @@ class RegistrationActivity : AppCompatActivity() {
         val manager = supportFragmentManager
         val transaction = manager.beginTransaction()
 
-        transaction.replace(R.id.fragment_container,fragment)
+        transaction.replace(R.id.fragment_container, fragment)
 
         transaction.commit()
     }

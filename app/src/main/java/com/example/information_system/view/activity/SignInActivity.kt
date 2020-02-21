@@ -13,7 +13,7 @@ import com.google.android.material.tabs.TabLayout
 class SignInActivity : AppCompatActivity(),
     ISignInActivity {
     lateinit var viewPager: ViewPager
-    private lateinit var tabLayout: TabLayout
+    lateinit var tabLayout: TabLayout
     private lateinit var bLogIn: Button
     private lateinit var bRegistration: Button
     private lateinit var signInPresenter:SignInPresenter
@@ -31,6 +31,7 @@ class SignInActivity : AppCompatActivity(),
         signInPresenter.setViewPagerAdapter()
         signInPresenter.animateViewPager()
 
+
         tabLayout.setupWithViewPager(viewPager,true)
 
         bLogIn.setOnClickListener {
@@ -44,7 +45,7 @@ class SignInActivity : AppCompatActivity(),
     }
 
     override fun initViews() {
-        viewPager = findViewById(R.id.view_pager)
+        viewPager = findViewById(R.id.pager)
         tabLayout=findViewById(R.id.tabDots)
     }
 

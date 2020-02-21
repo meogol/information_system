@@ -1,4 +1,4 @@
-package com.example.information_system.view.fragments
+package com.example.information_system.view.fragments.viewpagerFragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.information_system.R
 
-class LearnFragment:Fragment() {
+class CommunicateFragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view=LayoutInflater.from(container!!.context).inflate(R.layout.fragment_learn,container,false)
+        val view=
+            LayoutInflater.from(container!!.context).inflate(R.layout.fragment_communicate,container,false)
         return view
     }
 }

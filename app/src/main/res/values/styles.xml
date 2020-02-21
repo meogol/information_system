@@ -8,4 +8,22 @@
         <item name="android:statusBarColor">#FFA000</item>
     </style>
 
-</resources>
+    <style name="Widget.AppTheme.TextInputLayoutList" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#FFA000</item>
+    </style>
+    <style name="mytext" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/mainColor</item>
+        <item name="android:textColorHint">@color/mainColor</item>
+        <item name="colorAccent">@color/mainColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="CustomRadioButton" parent="AppTheme">
+        <item name="colorControlActivated">@color/mainColor</item>
+    </style>
+    <style name="et">
+        <item name="background">@drawable/et</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:padding">15dp</item>
+    </style>
+    </resources>
