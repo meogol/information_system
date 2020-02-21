@@ -64,6 +64,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:textAllCaps="false"
         android:id="@+id/forgot_btn"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
@@ -73,7 +74,7 @@
         android:shadowColor="@android:color/transparent"
         android:text="Забыли пароль?"
         android:textColor="@color/mainColor"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
@@ -88,6 +89,7 @@
         android:background="@drawable/orange_button" />
 
     <TextView
+        android:layout_marginTop="20dp"
         android:id="@+id/social_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
