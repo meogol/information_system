@@ -10,16 +10,19 @@
 
     <style name="Widget.AppTheme.TextInputLayoutList" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxStrokeColor">#FFA000</item>
-        <item name="boxCornerRadiusBottomEnd">3dp</item>
-        <item name="boxCornerRadiusBottomStart">3dp</item>
-        <item name="boxCornerRadiusTopEnd">3dp</item>
-        <item name="boxCornerRadiusTopStart">3dp</item>
     </style>
     <style name="mytext" parent="@android:style/TextAppearance">
-        <item name="android:textColor">#FFA000</item>
-        <item name="android:textColorHint">#FFA000</item>
-        <item name="colorAccent">#FFA000</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/mainColor</item>
+        <item name="android:textColorHint">@color/mainColor</item>
+        <item name="colorAccent">@color/mainColor</item>
+        <item name="android:textSize">12sp</item>
     </style>
-
+    <style name="CustomRadioButton" parent="AppTheme">
+        <item name="colorControlActivated">@color/mainColor</item>
+    </style>
+    <style name="et">
+        <item name="background">@drawable/et</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
     </resources>

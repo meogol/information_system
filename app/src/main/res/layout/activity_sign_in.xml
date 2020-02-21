@@ -95,7 +95,7 @@
             android:layout_marginBottom="30dp"
             android:background="@drawable/orange_corners"
             android:text="Войти"
-            android:textColor="#FFA000"
+            android:textColor="@color/mainColor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
