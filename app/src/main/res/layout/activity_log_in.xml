@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".view.activity.LogInActivity">
-
-    <EditText
-        android:id="@+id/etPassword"
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/login_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +19,7 @@
         style="@style/Widget.AppTheme.TextInputLayoutList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         app:hintTextAppearance="@style/mytext"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,36 +89,39 @@
         android:background="@drawable/orange_button" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/social_tv"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:layout_marginLeft="20dp"
+        android:text="Войти через социальные сети"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_btn" />
 
-    <EditText
-        android:id="@+id/etEmail"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/social_tv">
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <ImageButton
+            android:id="@+id/google_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/social_images"
+            android:src="@drawable/ic_google" />
+
+        <ImageButton
+            android:id="@+id/vk_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/social_images"
+            android:src="@drawable/ic_vk" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,12 +19,8 @@ class RegistrationStepTwoFragment: Fragment() {
                 container,false)
         val manRB:RadioButton=view.findViewById(R.id.rb_man)
         val womanRB:RadioButton=view.findViewById(R.id.rb_woman)
-        manRB.setOnClickListener(){
-            if (manRB.isChecked==true) womanRB.isChecked=false
-        }
-        womanRB.setOnClickListener(){
-            if (womanRB.isChecked==true) manRB.isChecked=false
-        }
+
         return view
     }
+
 }
