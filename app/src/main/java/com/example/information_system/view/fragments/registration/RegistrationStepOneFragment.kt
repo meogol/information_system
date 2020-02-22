@@ -11,6 +11,7 @@ import com.example.information_system.view.activity.RegistrationActivity
 
 class RegistrationStepOneFragment: Fragment() {
     private lateinit var bStepTwo: Button
+    private lateinit var bBeck: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
