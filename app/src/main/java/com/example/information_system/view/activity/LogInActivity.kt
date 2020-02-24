@@ -1,5 +1,6 @@
 package com.example.information_system.view.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -8,6 +9,7 @@ import com.example.information_system.R
 import com.example.information_system.view.fragments.dialogFragments.PasswordResetDialogFragment
 
 private lateinit var bForgot: Button
+private lateinit var bLogin: Button
 
 class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +28,7 @@ class LogInActivity : AppCompatActivity() {
 
     private fun initViews() {
         bForgot = findViewById(R.id.forgot_btn)
+        bLogin = findViewById(R.id.login_btn)
     }
 
     private fun initClickers() {
@@ -38,6 +41,10 @@ class LogInActivity : AppCompatActivity() {
             fragmentTransaction.addToBackStack(null)
             val dialogFragment = PasswordResetDialogFragment()
             dialogFragment.show(fragmentTransaction, "reset_pass")
+        }
+
+        bLogin.setOnClickListener {
+            startActivity(Intent(this, MainActivity().javaClass))
         }
     }
 }
