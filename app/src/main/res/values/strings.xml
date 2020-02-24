@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">information_system</string>
+    <string name="dfragment_reset_pass">Сбросить пароль</string>
 </resources>
