@@ -28,34 +28,4 @@ class LogInActivity : AppCompatActivity() {
         initViews()
         initClickers()
     }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == android.R.id.home) {
-            onBackPressed()
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    private fun initViews() {
-        bForgot = findViewById(R.id.forgot_btn)
-        bLogin = findViewById(R.id.login_btn)
-    }
-
-    private fun initClickers() {
-        bForgot.setOnClickListener {
-            val fragmentTransaction = supportFragmentManager.beginTransaction()
-            val prev = supportFragmentManager.findFragmentByTag("reset_pass")
-            if (prev != null) {
-                fragmentTransaction.remove(prev)
-            }
-            fragmentTransaction.addToBackStack(null)
-            val dialogFragment = PasswordResetDialogFragment()
-            dialogFragment.show(fragmentTransaction, "reset_pass")
-        }
-
-        bLogin.setOnClickListener {
-            startActivity(Intent(this, MainActivity().javaClass))
-        }
-    }
 }
