@@ -44,6 +44,7 @@ class SignInActivity : AppCompatActivity(),
 
     }
 
+
     override fun initViews() {
         viewPager = findViewById(R.id.pager)
         tabLayout=findViewById(R.id.tabDots)

@@ -32,25 +32,31 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/your_sex_tv">
 
-        <RadioButton
-            android:theme="@style/CustomRadioButton"
-            android:id="@+id/rb_man"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="Мужской"
-            app:layout_constraintStart_toStartOf="parent" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-        <RadioButton
-            android:theme="@style/CustomRadioButton"
-            android:id="@+id/rb_woman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:text="Женский"
-            app:layout_constraintStart_toEndOf="@+id/rb_man"
-            />
+            <RadioButton
+                android:id="@+id/rb_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Женский"
+                android:theme="@style/CustomRadioButton"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Мужской"
+                android:theme="@style/CustomRadioButton"
+                />
+        </RadioGroup>
+
     </LinearLayout>
 
 
