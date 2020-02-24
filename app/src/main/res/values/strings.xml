@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">information_system</string>
     <string name="dfragment_reset_pass">Сбросить пароль</string>
+    <integer name="com_vk_sdk_AppId">7315382</integer>
 </resources>

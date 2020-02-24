@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.activity.LogInActivity">
-    
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/login_toolbar"
         android:layout_width="match_parent"
@@ -88,31 +88,16 @@
         android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/forgot_btn" />
 
-    <TextView
-        android:id="@+id/social_tv"
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Войти через социальные сети"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/social_tv">
+        app:layout_constraintTop_toBottomOf="@+id/login_btn">
 
         <ImageButton
             android:id="@+id/google_ib"
