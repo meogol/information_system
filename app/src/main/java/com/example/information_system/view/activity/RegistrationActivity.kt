@@ -1,6 +1,7 @@
 package com.example.information_system.view.activity
 
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -36,7 +37,7 @@ class RegistrationActivity : AppCompatActivity() {
 
     fun initFragment(fragment: Fragment) {
         count++
-
+if (fragment is RegistrationStepTwoFragment) Log.e("frag","true")
         val manager = supportFragmentManager
         val transaction = manager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment).addToBackStack("stepOne")
@@ -51,4 +52,5 @@ class RegistrationActivity : AppCompatActivity() {
         super.onBackPressed()
 
     }
+
 }

@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Введите ваш E-mail..."
+            android:hint="Введите ваш E-mail"
             android:inputType="textEmailAddress"
              />
 
@@ -55,7 +55,7 @@
             style="@style/et"
             android:ems="10"
 
-            android:hint="Введите пароль..."
+            android:hint="Введите пароль"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Повторите пароль..."
+            android:hint="Повторите пароль"
             android:inputType="textPassword"
             style="@style/et"
             app:layout_constraintEnd_toEndOf="parent"

@@ -77,7 +77,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             style="@style/et"
-            android:hint="Имя..."
+            android:hint="Имя"
             android:inputType="text"
             android:textCursorDrawable="@drawable/cursor" />
 
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             style="@style/et"
             android:ems="10"
-            android:hint="Фамилия..."
+            android:hint="Фамилия"
             android:inputType="text"
             android:textCursorDrawable="@drawable/cursor" />
 
@@ -123,7 +123,7 @@
             android:layout_height="wrap_content"
             style="@style/et"
             android:ems="10"
-            android:hint="Дата рождения..."
+            android:hint="Дата рождения"
             android:inputType="date"
             android:textCursorDrawable="@drawable/cursor" />
 

@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.information_system.R
+import com.example.information_system.presenter.RegistrationStepOnePresenter
 import com.example.information_system.view.activity.RegistrationActivity
+import kotlinx.android.synthetic.main.activity_registration.*
 
-class RegistrationStepOneFragment: Fragment() {
+class RegistrationStepOneFragment : Fragment(), IRegistrationStepOneFragment {
     private lateinit var bStepTwo: Button
     private lateinit var bBeck: Button
 
@@ -18,16 +20,25 @@ class RegistrationStepOneFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view=
-            LayoutInflater.from(container!!.context).inflate(R.layout.fragment_registration_step_one,
-                container,false)
-
-        bStepTwo = view.findViewById(R.id.b_next_step)
-
+        val view =
+            LayoutInflater.from(container!!.context).inflate(
+                R.layout.fragment_registration_step_one,
+                container, false
+            )
+        initViews(view)
+        setToolbarTitle()
         bStepTwo.setOnClickListener {
-            (container.context as RegistrationActivity).initFragment(RegistrationStepTwoFragment())
+            RegistrationStepOnePresenter(container.context).initFragments()
         }
 
         return view
+    }
+
+    override fun initViews(view: View) {
+        bStepTwo = view.findViewById(R.id.b_next_step)
+    }
+
+    override fun setToolbarTitle() {
+        (context as RegistrationActivity).toolbar.title = "Создание профиля"
     }
 }
