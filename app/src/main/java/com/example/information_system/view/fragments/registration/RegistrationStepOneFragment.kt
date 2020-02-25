@@ -12,8 +12,11 @@ import com.example.information_system.view.activity.RegistrationActivity
 import kotlinx.android.synthetic.main.activity_registration.*
 
 class RegistrationStepOneFragment : Fragment(), IRegistrationStepOneFragment {
+
+
     private lateinit var bStepTwo: Button
     private lateinit var bBeck: Button
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
