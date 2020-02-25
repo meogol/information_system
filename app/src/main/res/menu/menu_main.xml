@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:title="Курс"
+        android:id="@+id/nav_course"
+        android:orderInCategory="1"
+        android:visible="true" />
+    <item
+        android:title="Блог"
+        android:id="@+id/nav_blog"
+        android:orderInCategory="2"
+        android:visible="true" />
+    <item
+        android:title="Статьи"
+        android:id="@+id/nav_articles"
+        android:orderInCategory="3"
+        android:visible="true" />
+    <item
+        android:title="Трансляции"
+        android:id="@+id/nav_broadcasts"
+        android:orderInCategory="4"
+        android:visible="true" />
+</menu>
