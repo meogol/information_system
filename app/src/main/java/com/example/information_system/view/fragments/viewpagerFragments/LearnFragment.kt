@@ -17,10 +17,10 @@ class LearnFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = LayoutInflater.from(container!!.context)
+        val view = LayoutInflater.from(container?.context)
             .inflate(R.layout.fragment_learn, container, false)
         val roboto = Typeface.createFromAsset(
-            context!!.assets,
+            context?.assets,
             "fonts/Roboto-Regular.ttf"
         )
         val learnTV:TextView=view.findViewById(R.id.learn_tv)
