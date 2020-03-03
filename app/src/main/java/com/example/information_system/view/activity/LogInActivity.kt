@@ -1,10 +1,10 @@
 package com.example.information_system.view.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.view.MenuItem
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.information_system.R
 import com.example.information_system.view.fragments.dialogFragments.PasswordResetDialogFragment
@@ -47,7 +47,11 @@ class LogInActivity : AppCompatActivity() {
         }
 
         bLogin.setOnClickListener {
-            startActivity(Intent(this, MainActivity().javaClass))
+            val intent =
+                Intent(this, MainActivity::class.java)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            startActivity(intent)
         }
     }
 

@@ -28,8 +28,9 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
-        app:itemTextColor="@android:color/black"
+        app:itemTextColor="@color/main_nav_color"
         android:layout_height="73dp"
+        app:itemIconTint="@color/main_nav_color"
         android:background="@drawable/bottom_bar_shape"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
