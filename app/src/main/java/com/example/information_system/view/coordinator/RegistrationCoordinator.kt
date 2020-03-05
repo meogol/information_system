@@ -73,7 +73,7 @@ public class RegistrationCoordinator {
                 val account = completedTask.getResult(ApiException::class.java)
                 Log.e("account", account.toString())
                 newActivity(context)
-                Log.e("name", account!!.idToken)
+               // Log.e("token", account!!.idToken)
             } catch (e: ApiException) {
                 Log.e("fail", "signInResult:failed code=" + e.getStatusCode()); }
         }
