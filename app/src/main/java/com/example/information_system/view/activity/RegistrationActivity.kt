@@ -37,11 +37,13 @@ class RegistrationActivity : AppCompatActivity() {
 
     fun initFragment(fragment: Fragment) {
         count++
-if (fragment is RegistrationStepTwoFragment) Log.e("frag","true")
+        if (fragment is RegistrationStepTwoFragment)
+            Log.e("frag", "true")
         val manager = supportFragmentManager
         val transaction = manager.beginTransaction()
-        transaction.replace(R.id.fragment_container, fragment).addToBackStack("stepOne")
-        transaction.commit()
+        transaction.replace(R.id.fragment_container, fragment)
+            .addToBackStack("stepOne")
+            .commit()
     }
 
     override fun onBackPressed() {

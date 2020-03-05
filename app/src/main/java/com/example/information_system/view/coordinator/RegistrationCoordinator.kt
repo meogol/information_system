@@ -51,18 +51,18 @@ public class RegistrationCoordinator {
         }*/
     }
 
-     public inner class GoogleAuth() {
+    public inner class GoogleAuth() {
         lateinit var mGoogleSignInClient: GoogleSignInClient
 
         fun initGSO(): GoogleSignInOptions? {
-                val gso =
+            val gso =
                 GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                        .requestEmail()
-                        .build()
-        return gso
+                    .requestEmail()
+                    .build()
+            return gso
         }
 
-        fun signIn( context: Context,  mainActivity: Activity) {
+        fun signIn(context: Context, mainActivity: Activity) {
             val gso = initGSO()
             mGoogleSignInClient = GoogleSignIn.getClient(context, gso!!)
             startGoogleActivity(mGoogleSignInClient, mainActivity)
@@ -73,17 +73,18 @@ public class RegistrationCoordinator {
                 val account = completedTask.getResult(ApiException::class.java)
                 Log.e("account", account.toString())
                 newActivity(context)
-               // Log.e("token", account!!.idToken)
+                Log.e("token", account!!.idToken)
             } catch (e: ApiException) {
                 Log.e("fail", "signInResult:failed code=" + e.getStatusCode()); }
         }
     }
 
-    fun newActivity(context: Context){
+    fun newActivity(context: Context) {
         val intent = Intent(context, MainActivity::class.java)
         context.startActivity(intent)
     }
-    fun startGoogleActivity(mGoogleSignInClient:GoogleSignInClient,mainActivity:Activity){
+
+    fun startGoogleActivity(mGoogleSignInClient: GoogleSignInClient, mainActivity: Activity) {
         val signInIntent: Intent = mGoogleSignInClient.signInIntent
         mainActivity.startActivityForResult(signInIntent, 1)
     }
@@ -106,11 +107,12 @@ public class RegistrationCoordinator {
                 })
         )
 
-        if (requestCode == 1) {
-            Log.e("result code", resultCode.toString())
-            val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
-            GoogleAuth().handleSignInResult(task, context)
-        }
+            if (requestCode == 1) {
+                Log.e("result code", resultCode.toString())
+                val task: Task<GoogleSignInAccount> =
+                    GoogleSignIn.getSignedInAccountFromIntent(data)
+                GoogleAuth().handleSignInResult(task, context)
+            }
 
     }
 }
