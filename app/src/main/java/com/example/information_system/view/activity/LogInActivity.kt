@@ -5,12 +5,19 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.Button
+import android.view.MenuItem
+import android.widget.ImageButton
+
 import androidx.appcompat.widget.Toolbar
 import com.example.information_system.R
+import com.example.information_system.view.coordinator.RegistrationCoordinator
 import com.example.information_system.view.fragments.dialogFragments.PasswordResetDialogFragment
 
 private lateinit var bForgot: Button
 private lateinit var bLogin: Button
+private lateinit var bGoogleAuth: ImageButton
+private lateinit var bVkAuth: ImageButton
 
 class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +39,8 @@ class LogInActivity : AppCompatActivity() {
     private fun initViews() {
         bForgot = findViewById(R.id.forgot_btn)
         bLogin = findViewById(R.id.login_btn)
+        bGoogleAuth = findViewById(R.id.google_ib)
+        bVkAuth = findViewById(R.id.vk_ib)
     }
 
     private fun initClickers() {
@@ -53,6 +62,19 @@ class LogInActivity : AppCompatActivity() {
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
         }
+
+        bVkAuth.setOnClickListener{
+            RegistrationCoordinator().VKAuth().signIn(this@LogInActivity)
+        }
+
+        bGoogleAuth.setOnClickListener {
+            RegistrationCoordinator().GoogleAuth().signIn(this, this@LogInActivity)
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        RegistrationCoordinator().resultAuth(this, requestCode, resultCode, data)
+        super.onActivityResult(requestCode, resultCode, data)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
